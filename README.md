@@ -1,2 +1,0 @@
-# Interactive-web-apps
- IWA
