@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+​
+        /*
+        * alert function provides a popup message
+        * prompt function provides a popup which accepts user input similar to a form
+        */
+​
+        alert('===== Even or Odd Program ====')
+​
+        // get user input and save to a variable called 'input'
+        let input = prompt('enter a number here');
+        
+        // convert variable to number data type
+        input = parseInt(input)
+​
+​
+        // if statement checking two different conditions
+        if ( (input % 5 === 0) && (input <= 10) ) {
+​
+            alert('Fizz');
+​
+        } else if (input % 2 !== 0) { // else if statement example
+​
+            alert(input + ' is odd'); 
+​
+        } else { // else statement to serve as default
+​
+            alert(input + ' is even but its over 10')
+        }
+​
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
