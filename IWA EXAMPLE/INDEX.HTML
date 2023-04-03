@@ -11,7 +11,7 @@
         * prompt function provides a popup which accepts user input similar to a form
         */
 ​
-        alert('===== Even or Odd Program ====')
+        alert('=====fizz-buzz programm ====')
 ​
         // get user input and save to a variable called 'input'
         let input = prompt('enter a number here');
@@ -21,17 +21,18 @@
 ​
 ​
         // if statement checking two different conditions
-        if ( (input % 5 === 0) && (input <= 10) ) {
+        if ( input % 5 === 0 ) {
 ​
             alert('Fizz');
 ​
-        } else if (input % 2 !== 0) { // else if statement example
+        } else if (input % 3===0) { // else if statement 
 ​
-            alert(input + ' is odd'); 
+            alert('buzz'); 
 ​
-        } else { // else statement to serve as default
+        } else if((input % 5===0)&& (input % 3===0)){
+                alert('fizz-buzz')
 ​
-            alert(input + ' is even but its over 10')
+            
         }
 ​
     </script>
