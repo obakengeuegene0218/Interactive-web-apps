@@ -18,11 +18,12 @@ const leo= {
 	balance : leoBalance,
 	 id : '47afb389-8014-4d0b-aff3-e40203d2107f',
 	age : 24,
-}
-	leoAddress = {
+
+	leoAddress  :{
         number : leoNumber,
 	street : leoStreet,
 	postalCode: leoPostal }
+}
     
     
 
