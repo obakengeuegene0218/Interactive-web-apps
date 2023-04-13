@@ -18,12 +18,13 @@ const leo= {
 	balance : leoBalance,
 	 id : '47afb389-8014-4d0b-aff3-e40203d2107f',
 	age : 24,
+}
 
-	leoAddress  :{
+	leoAddress  ={
         number : leoNumber,
 	street : leoStreet,
 	postalCode: leoPostal }
-}
+
     
     
 
@@ -34,11 +35,12 @@ const sarah = {
 	accessId : '6b279ae5-5657-4240-80e9-23f6b635f7a8',
 	balance : sarahBalance,
 }
-    sarahAddress = {
+    sarahAddress ={
        number : sarahNumber,
 	   street : sarahStreet,
 	  postalCode : sarahPostal,
 	}
+
 
 
 console.log(leo,{leoAddress})
