@@ -29,8 +29,6 @@ document.querySelectorAll('.biscuits dd')[2].innerText = biscuit3
 document.querySelectorAll('.donuts dd')[2].innerText = donut3
 document.querySelectorAll('.pancakes dd')[2].innerText = pancake3
 document.querySelectorAll('.status dd')[2].innerText =status3
-//added tenery operator (? :) is used to check the value of the 'data delivered' attribite and set the text content accordingly.
-//added the 'getAttribute' property to set of the element based on the corresponding data attributes.
 
 
 
