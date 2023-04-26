@@ -71,12 +71,14 @@ const createHtml = (athlete) => {
   const fragment = document.createDocumentFragment();
   let title = document.createElement('h2');
   title.textContent = id
-  fragment.appendChild(title);
+  fragment.appendChild(title) ;
+
   const list = document.createElement('dl');
   const day =  date.getDate()
   const month = MONTHS[date.getMonth()];
   const year = date.getFullYear();
   console.log(month)
+  
   let sum = 0
   let i = 0;
   while ( i < time.length ) {
