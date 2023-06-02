@@ -1,5 +1,8 @@
 import { createOrderData,updateDragging } from "./data.js";
 import { createOrderHtml,html,updateDraggingHtml } from "./view.js";
+
+
+// Handles showing and hiding the help overlay.
 const handleHelpToggle = (event) => {
   const overlay = html.help.overlay;
   overlay.show();
@@ -7,6 +10,8 @@ const handleHelpToggle = (event) => {
     overlay.close();
   }
 };
+
+// Handles showing and hiding the add overlay.
 const handleAddToggle = (e) => {
   html.other.add.focus();
   const overlay = html.add.overlay;
@@ -16,6 +21,8 @@ const handleAddToggle = (e) => {
     html.add.form.reset();
   }
 };
+
+// Handles submitting a new order.
 const handleAddSubmit = (e) => {
   e.preventDefault();
   const overlay = html.add.overlay;
@@ -28,6 +35,9 @@ const handleAddSubmit = (e) => {
   overlay.close();
   append.appendChild(htmlData);
 };
+
+
+// Handles showing and hiding the edit overlay.
 const handleEditToggle = (e) => {
   const overlay = html.edit.overlay;
   const cancelBtn = html.edit.cancel;
@@ -49,6 +59,10 @@ const handleEditToggle = (e) => {
   }
   html.edit.delete.id = id;
 };
+
+
+
+// Handles submitting an edited order.
 const handleEditSubmit = (e) => {
   e.preventDefault();
   const idRemove = html.edit.delete.id;
@@ -64,6 +78,9 @@ const handleEditSubmit = (e) => {
   e.target.reset();
   overlay.close();
 };
+
+
+// Handles deleting an order.
 const handleDelete = (e) => {
   const idToBeDeleted = html.edit.delete.id;
   const orderToBeDeleted = document.querySelector(
@@ -73,6 +90,11 @@ const handleDelete = (e) => {
   orderToBeDeleted.remove();
   overlay.close();
 };
+
+
+
+
+// Add event listeners for various UI elements.
 html.add.cancel.addEventListener("click", handleAddToggle); //
 html.other.add.addEventListener("click", handleAddToggle); //
 html.add.form.addEventListener("submit", handleAddSubmit); //
@@ -94,6 +116,8 @@ html.other.help.addEventListener("click", handleHelpToggle); //
  *
  * @param {Event} event
  */
+
+// Handles drag and drop functionality.
 const handleDragOver = (event) => {
   event.preventDefault();
   const path = event.path || event.composedPath();
